@@ -9,7 +9,8 @@ const StoreContextProvider = (props) => {
     return localCart ? JSON.parse(localCart) : {};
   });
 
-  const url = "http://localhost:4001";
+  //const url = "http://localhost:4001";
+  const url = "https://farmerstoreapp.onrender.com";
   const [token, setToken] = useState(() => localStorage.getItem("token") || "");
   const [product_list, setProductList] = useState([]);
 
