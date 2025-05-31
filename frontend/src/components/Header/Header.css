@@ -1,0 +1,76 @@
+
+
+.header {
+  height: 75vh; /* Reduced height for better visual balance */
+  width: 80vw;  /* Slightly increased width to fill space better */
+  margin: 0 auto; /* Remove extra vertical margin */
+  margin: 30px auto; /* Centers horizontally */
+  margin-top: 20px; /* Small gap from top */
+  background: url('/header_img.png') no-repeat center center;
+  background-size: cover; /* Fill header space neatly */
+  position: relative;
+  border-radius: 12px;
+}
+
+.header-contents{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 0.3s;
+}
+
+.header-contents h2, .header-contents p {
+    background-color: rgba(84, 82, 82, 0.5); /* Adds a semi-transparent black background */
+    padding: 2px; /* Optional: adds some padding around the text */
+}
+
+.header-contents h2{
+    font-weight: 500;
+    color: white;
+    font-size: max(3vw,20px);
+    margin: 0;
+    align-items: center;
+}
+
+.header-contents p{
+    color: white;
+    font-size: 1.5vw;
+    margin: 0;
+}
+
+.header-contents button{
+    border: none;
+    color: #747474;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background-color: white;
+    font-size: max(1vw,13px);
+    border-radius: 50px;
+}
+
+@media (max-width:1050px) {
+    
+    .header-contents{
+        max-width: 45%;
+    }
+    
+}
+
+@media (max-width:750px) {
+    
+    .header-contents{
+        max-width: 65%;
+    }
+    .header-contents p{
+        display: none;
+    }
+    .header-contents button{
+        padding: 2vw 4vw;
+    }
+    
+}

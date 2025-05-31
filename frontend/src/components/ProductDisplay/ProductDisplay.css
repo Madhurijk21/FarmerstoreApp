@@ -1,0 +1,25 @@
+.product-display {
+  padding: 30px 5%;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.product-display h2 {
+  margin-bottom: 40px;
+  color: #222;
+  font-size: 28px;
+}
+
+.product-display-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); /* Adjusting grid for smaller items */
+  gap: 15px; /* Adjusting gap between items */
+  justify-items: center;
+}
+
+.product-price-unit {
+  font-size: 13px;
+  color: #555;
+  margin-left: 4px;
+}
+
